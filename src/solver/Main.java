@@ -26,7 +26,12 @@ import javax.swing.SwingUtilities;
 public class Main {
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> createAndShowGUI());
+    	SwingUtilities.invokeLater(new Runnable() {
+    	    @Override
+    	    public void run() {
+    	        createAndShowGUI();
+    	    }
+    	});
     }
 
     private static void createAndShowGUI() {
