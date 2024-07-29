@@ -36,7 +36,6 @@ public class Main {
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-
         JTextField pathField = new JTextField(20);
         JTextField campoField = new JTextField(5);
         JTextField sequenciaField = new JTextField(5);
@@ -104,7 +103,6 @@ public class Main {
                 }
             }
         });
-
         panel.add(createPanel("Caminho do Arquivo:  ", pathField, browseButton));
         panel.add(createPanel("Campo a ser alterado:  ", campoField));
         panel.add(createPanel("Sequência correta do campo:  ", sequenciaField));
